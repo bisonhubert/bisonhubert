@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function ComicBook(props) {
   // props.comic.creators: "(W) Sonny Liew, Ted Anderson (A) Marina Julia (CA) Jon Vermilyea"
@@ -20,4 +21,17 @@ export default function ComicBook(props) {
       <h6>{props.comic.release_date}</h6>
     </article>
   )
+}
+
+ComicBook.propTypes = {
+  key: PropTypes.string,
+  comic: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string,
+    publisher: PropTypes.string,
+    price: PropTypes.string,
+    release_date: PropTypes.string,
+    creators: PropTypes.string,
+    diamond_id: PropTypes.string
+  })
 }
