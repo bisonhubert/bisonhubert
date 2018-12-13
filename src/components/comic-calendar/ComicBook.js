@@ -2,14 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function ComicBook(props) {
-  // props.comic.creators: "(W) Sonny Liew, Ted Anderson (A) Marina Julia (CA) Jon Vermilyea"
-  // props.comic.description: ""
-  // props.comic.diamond_id: "SEP188086"
-  // props.comic.price: "$3.99"
-  // props.comic.publisher: "BOOM! STUDIOS"
-  // props.comic.release_date: "2018-12-12"
-  // props.comic.title: "ADVENTURE TIME SEASON 11 #1 (2ND PTG)"
-
   // todo: get the images from each of these
   // possibly by scraping from different publisher sites
   return (
