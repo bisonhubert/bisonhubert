@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import cones from '../assets/pikachu-cones.gif';
 import jackhammer from '../assets/pikachu-jackhammer.gif';
-import '../atomic.css';
+import '../utilities.css';
 
 const bkgColors = ['#EB3223', '#FFAE03', '#A0E8AF', '#01FDF6', '#CBBAED'],
       randomIdx = Math.round(Math.random() * (bkgColors.length - 1) + 1),

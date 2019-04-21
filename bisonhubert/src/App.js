@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import UnderConstruction from './components/UnderConstruction.jsx'
 import './App.css';
-import './atomic.css';
+import './utilities.css';
 
 class App extends Component {
   render() {
