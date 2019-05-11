@@ -4,13 +4,17 @@ $black: #333;
 $white: #FFF;
 
 
+// Transparencies
+$navTileHover: 0.5;
+
+
 // Color
 // -----------------------------------------------------
 $blue: #5081A7;
-$blueDark: #2F5369;
+$blueTransparent: rgba(80,129,167,$navTileHover);
 $green: #154B3A;
-$greenDark: #53654B;
+$greenTransparent: rgba(21,75,58,$navTileHover);
 $red: #A7302C;
-$redDark: #4B1D23;
+$redTransparent: rgba(167,48,44,$navTileHover);
 $yellow: #EEC233;
-$yellowDark: #BCA233;
+$yellowTransparent: rgba(238,194,51,$navTileHover);

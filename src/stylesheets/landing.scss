@@ -3,6 +3,11 @@
   vertical-align: top;
   height: calc(50% - 3px);
   width: calc(50% - 3px);
+
+  .Tile {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .NavTile:first-child {
@@ -11,6 +16,12 @@
 
   .Tile {
     background-color: $red;
+  }
+
+  .Tile:hover {
+    // TODO (Bison): update hover to be transparency w/ texture behind it
+    // TODO (Bison): make transparency gradient come out of the center towards the corner
+    background-color: $redTransparent;
   }
 }
 
@@ -21,6 +32,12 @@
   .Tile {
     background-color: $yellow;
   }
+
+  .Tile:hover {
+    // TODO (Bison): update hover to be transparency w/ texture behind it
+    // TODO (Bison): make transparency gradient come out of the center towards the corner
+    background-color: $yellowTransparent;
+  }
 }
 
 .NavTile:nth-child(3) {
@@ -29,6 +46,12 @@
 
   .Tile {
     background-color: $blue;
+  }
+
+  .Tile:hover {
+    // TODO (Bison): update hover to be transparency w/ texture behind it
+    // TODO (Bison): make transparency gradient come out of the center towards the corner
+    background-color: $blueTransparent;
   }
 }
 
@@ -39,9 +62,10 @@
   .Tile {
     background-color: $green;
   }
-}
 
-.Tile {
-  height: 100%;
-  width: 100%;
+  .Tile:hover {
+    // TODO (Bison): update hover to be transparency w/ texture behind it
+    // TODO (Bison): make transparency gradient come out of the center towards the corner
+    background-color: $greenTransparent;
+  }
 }
