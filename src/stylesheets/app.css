@@ -1,33 +1,55 @@
-.App {
-  text-align: center;
+.NavTile {
+  display: inline-block;
+  vertical-align: top;
+  height: calc(50% - 3px);
+  width: calc(50% - 3px);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.NavTile:first-child {
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.NavTile:nth-child(2) {
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+.NavTile:nth-child(3) {
+  border-top: 3px solid white;
+  border-right: 3px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NavTile:last-child {
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
+#NavTile--red .Tile {
+  background-color: #A7302C;
+  /*red: #A7302C*/
+  /*redDark: #4B1D23*/
+}
+
+#NavTile--yellow .Tile {
+  background-color: #EEC233;
+  /*yellow: #EEC233*/
+  /*yellowDark: #BCA233*/
+}
+
+#NavTile--blue .Tile {
+  background-color: #154B3A;
+  /*green: #154B3A*/
+  /*greenDark: #53654B*/
+}
+
+#NavTile--green .Tile {
+  background-color: #5081A7;
+  /*blue: #5081A7*/
+  /*blueDark: #2F5369*/
+}
+
+.Tile {
+  height: 100%;
+  width: 100%;
 }
