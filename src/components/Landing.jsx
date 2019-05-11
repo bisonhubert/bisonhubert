@@ -4,11 +4,11 @@ import NavTile from './NavTile';
 
 function Landing() {
   return (
-    <div className="Landing h--100p w--100p">
-      <NavTile id='NavTile--red' />
-      <NavTile id='NavTile--yellow' />
-      <NavTile id='NavTile--green' />
-      <NavTile id='NavTile--blue' />
+    <div className="landing h--100p w--100p">
+      <NavTile id='nav__tile--red' />
+      <NavTile id='nav__tile--yellow' />
+      <NavTile id='nav__tile--green' />
+      <NavTile id='nav__tile--blue' />
     </div>
   )
 }

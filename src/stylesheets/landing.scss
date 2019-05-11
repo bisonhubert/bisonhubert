@@ -1,71 +1,70 @@
-.NavTile {
+.landing__container {
+  height: 100%;
+  width: 100%;
+  // TODO (Bison): portrait background image
+  // background-image: url('');
+}
+
+.nav__tile {
   display: inline-block;
   vertical-align: top;
   height: calc(50% - 3px);
   width: calc(50% - 3px);
 
-  .Tile {
+  .tile {
     height: 100%;
     width: 100%;
   }
 }
 
-.NavTile:first-child {
+.nav__tile:first-child {
   border-bottom: 3px solid $white;
   border-right: 3px solid $white;
 
-  .Tile {
+  .tile {
     background-color: $red;
   }
 
-  .Tile:hover {
-    // TODO (Bison): update hover to be transparency w/ texture behind it
-    // TODO (Bison): make transparency gradient come out of the center towards the corner
+  .tile:hover {
     background-color: $redTransparent;
   }
 }
 
-.NavTile:nth-child(2) {
+.nav__tile:nth-child(2) {
   border-bottom: 3px solid $white;
   border-left: 3px solid $white;
 
-  .Tile {
+  .tile {
     background-color: $yellow;
   }
 
-  .Tile:hover {
-    // TODO (Bison): update hover to be transparency w/ texture behind it
-    // TODO (Bison): make transparency gradient come out of the center towards the corner
+  .tile:hover {
     background-color: $yellowTransparent;
   }
 }
 
-.NavTile:nth-child(3) {
+.nav__tile:nth-child(3) {
   border-top: 3px solid $white;
   border-right: 3px solid $white;
 
-  .Tile {
+  .tile {
     background-color: $blue;
   }
 
-  .Tile:hover {
-    // TODO (Bison): update hover to be transparency w/ texture behind it
-    // TODO (Bison): make transparency gradient come out of the center towards the corner
+  .tile:hover {
     background-color: $blueTransparent;
   }
 }
 
-.NavTile:last-child {
+.nav__tile:last-child {
   border-top: 3px solid $white;
   border-left: 3px solid $white;
 
-  .Tile {
+  .tile {
     background-color: $green;
   }
 
-  .Tile:hover {
-    // TODO (Bison): update hover to be transparency w/ texture behind it
-    // TODO (Bison): make transparency gradient come out of the center towards the corner
+  .tile:hover {
     background-color: $greenTransparent;
   }
 }
