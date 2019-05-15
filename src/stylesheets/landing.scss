@@ -1,8 +1,6 @@
 .landing__container {
   height: 100%;
   width: 100%;
-  // TODO (Bison): portrait background image
-  // background-image: url('');
 }
 
 .nav__tile {
@@ -26,7 +24,7 @@
   }
 
   .tile:hover {
-    background-color: $redTransparent;
+    // background-color: $redTransparent;
   }
 }
 
@@ -39,7 +37,7 @@
   }
 
   .tile:hover {
-    background-color: $yellowTransparent;
+    // background-color: $yellowTransparent;
   }
 }
 
@@ -52,7 +50,7 @@
   }
 
   .tile:hover {
-    background-color: $blueTransparent;
+    // background-color: $blueTransparent;
   }
 }
 
@@ -65,6 +63,26 @@
   }
 
   .tile:hover {
-    background-color: $greenTransparent;
+    // background-color: $greenTransparent;
+  }
+}
+
+.landing {
+  position: relative;
+
+  .profile-icon {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    height: 222px;
+    width: 222px;
+    top: calc(50% - 111px);
+    left: calc(50% - 111px);
+
+    img {
+      border-radius: 50%;
+      border: 6px solid $white;
+      box-sizing: border-box;
+    }
   }
 }
