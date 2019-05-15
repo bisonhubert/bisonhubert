@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Landing from './components/Landing.jsx'
 
-import './stylesheets/main.scss';
-
 class App extends Component {
   render() {
     return (
