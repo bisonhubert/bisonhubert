@@ -9,9 +9,37 @@
   height: calc(50% - 3px);
   width: calc(50% - 3px);
 
-  .tile {
+  .tile__link {
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .tile__inner {
     height: 100%;
     width: 100%;
+  }
+
+  .tile__link__text {
+    color: $white;
+    font-family: $hind;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    text-align: right;
+    position: relative;
+
+    span {
+      width: 10px;
+      transform-origin: bottom center;
+      position: absolute;
+      height: 140px; // this should be a variable, see 140px also below
+    }
   }
 }
 
@@ -19,12 +47,48 @@
   border-bottom: 3px solid $white;
   border-right: 3px solid $white;
 
-  .tile {
+  .tile__inner {
     background-color: $red;
   }
 
-  .tile:hover {
-    // background-color: $redTransparent;
+  .tile__link__text {
+    // difference is half height of profile icon + height of text line height + margin
+    // profile icon: 111px
+    // text line height (24px)
+    // margin: 5px;
+    top: calc(100% - 140px);
+
+    .char1 {
+      transform: rotate(-82deg);
+    }
+
+    .char2 {
+      transform: rotate(-72deg);
+    }
+
+    .char3 {
+      transform: rotate(-62deg);
+    }
+
+    .char4 {
+      transform: rotate(-52deg);
+    }
+
+    .char5 {
+      transform: rotate(-42deg);
+    }
+
+    .char6 {
+      transform: rotate(-32deg);
+    }
+
+    .char7 {
+      transform: rotate(-22deg);
+    }
+
+    .char8 {
+      transform: rotate(-12deg);
+    }
   }
 }
 
@@ -32,12 +96,33 @@
   border-bottom: 3px solid $white;
   border-left: 3px solid $white;
 
-  .tile {
+  .tile__inner {
     background-color: $yellow;
   }
 
-  .tile:hover {
-    // background-color: $yellowTransparent;
+  .tile__link__text {
+    // difference is half height of profile icon + height of text line height + margin
+    // profile icon: 111px
+    // text line height (24px)
+    // margin: 5px;
+    top: calc(100% - 140px);
+    right: 172px; // TODO (Bison): y tho?
+
+    .char1 {
+      transform: rotate(33deg);
+    }
+
+    .char2 {
+      transform: rotate(41deg);
+    }
+
+    .char3 {
+      transform: rotate(49deg);
+    }
+
+    .char4 {
+      transform: rotate(58deg);
+    }
   }
 }
 
@@ -45,12 +130,36 @@
   border-top: 3px solid $white;
   border-right: 3px solid $white;
 
-  .tile {
+  .tile__inner {
     background-color: $blue;
   }
 
-  .tile:hover {
-    // background-color: $blueTransparent;
+  .tile__link__text {
+    // difference is half height of profile icon + height of text line height + margin
+    // profile icon: 111px
+    // text line height (24px)
+    // margin: -5px;
+    top: -130px;
+
+    .char1 {
+      transform: rotate(245deg);
+    }
+
+    .char2 {
+      transform: rotate(235deg);
+    }
+
+    .char3 {
+      transform: rotate(225deg);
+    }
+
+    .char4 {
+      transform: rotate(215deg);
+    }
+
+    .char5 {
+      transform: rotate(205deg);
+    }
   }
 }
 
@@ -58,12 +167,41 @@
   border-top: 3px solid $white;
   border-left: 3px solid $white;
 
-  .tile {
+  .tile__inner {
     background-color: $green;
   }
 
-  .tile:hover {
-    // background-color: $greenTransparent;
+  .tile__link__text {
+    // difference is half height of profile icon + height of text line height + margin
+    // profile icon: 111px
+    // text line height (24px)
+    // margin: -5px;
+    top: -130px;
+    right: 172px; // TODO (Bison): y tho?
+
+    .char1 {
+      transform: rotate(105deg);
+    }
+
+    .char2 {
+      transform: rotate(115deg);
+    }
+
+    .char3 {
+      transform: rotate(125deg);
+    }
+
+    .char4 {
+      transform: rotate(135deg);
+    }
+
+    .char5 {
+      transform: rotate(145deg);
+    }
+
+    .char6 {
+      transform: rotate(157deg);
+    }
   }
 }
 
@@ -79,10 +217,14 @@
     top: calc(50% - 111px);
     left: calc(50% - 111px);
 
+    // TODO (Bison): remove
+    // display: none;
+
     img {
       border-radius: 50%;
       border: 6px solid $white;
       box-sizing: border-box;
+
     }
   }
 }

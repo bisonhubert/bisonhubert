@@ -7,10 +7,10 @@ function Landing() {
   return (
     <div className="landing h--100p w--100p">
       <article className="h--100p w--100p">
-        <NavTile id='nav__tile--red' />
-        <NavTile id='nav__tile--yellow' />
-        <NavTile id='nav__tile--green' />
-        <NavTile id='nav__tile--blue' />
+        <NavTile id='nav__tile--red' link_text='Projects' />
+        <NavTile id='nav__tile--yellow' link_text='Blog' />
+        <NavTile id='nav__tile--green' link_text='About' />
+        <NavTile id='nav__tile--blue' link_text='Resume' />
       </article>
       <ProfileIcon />
     </div>
