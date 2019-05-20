@@ -5,7 +5,7 @@ import logo from '../assets/logo.ico'
 function Logo() {
   return (
     <article className="logo">
-      <a href="/">
+      <a href="">
         <img src={logo} alt="Logo icon for Bison Hubert" className="w--100p" />
       </a>
     </article>

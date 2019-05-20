@@ -8,13 +8,13 @@ function Footer() {
       <article>
         <nav>
           <article>
-            <a href="/">Email me</a>
+            <a href="">Email me</a>
           </article>
           <article>
-            <a href="/">Twitter</a>
+            <a href="">Twitter</a>
           </article>
           <article>
-            <a href="/">LinkedIn</a>
+            <a href="">LinkedIn</a>
           </article>
         </nav>
       </article>

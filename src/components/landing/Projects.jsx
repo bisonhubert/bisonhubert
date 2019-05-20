@@ -7,7 +7,7 @@ function Projects() {
         <h3>Generocity</h3>
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <a href="/" target="_blank" rel="noopener">More --></a>
+          <a href="" target="_blank" rel="noopener">More --></a>
         </p>
         <article className="screenshots">
 
@@ -17,7 +17,7 @@ function Projects() {
         <h3>Cool Dragon</h3>
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <a href="/" target="_blank" rel="noopener">More --></a>
+          <a href="" target="_blank" rel="noopener">More --></a>
         </p>
         <article className="screenshots">
 
@@ -27,7 +27,7 @@ function Projects() {
         <h3>Gains</h3>
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <a href="/" target="_blank" rel="noopener">More --></a>
+          <a href="" target="_blank" rel="noopener">More --></a>
         </p>
         <article className="screenshots">
 
@@ -37,7 +37,7 @@ function Projects() {
         <h3>Reddit Clone</h3>
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <a href="/" target="_blank" rel="noopener">More --></a>
+          <a href="" target="_blank" rel="noopener">More --></a>
         </p>
         <article className="screenshots">
 
