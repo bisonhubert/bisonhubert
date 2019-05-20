@@ -1,9 +1,9 @@
 import React from 'react';
 
-import About from './About.jsx'
-import InProgress from './InProgress.jsx'
-import Intro from './Intro.jsx'
-import Projects from './Projects.jsx'
+import About from './About'
+import InProgress from './InProgress'
+import Intro from './Intro'
+import Projects from './Projects'
 
 function Landing() {
   return (

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import Footer from './components/Footer.jsx'
-import Header from './components/Header.jsx'
+import Footer from './components/Footer'
+import Header from './components/Header'
 
-import Landing from './components/landing/Landing.jsx'
+import Landing from './components/landing/Landing'
 
 import './App.css';
 import './utilities.css';
