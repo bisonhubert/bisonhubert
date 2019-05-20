@@ -1,10 +1,25 @@
 import React from 'react';
 
+import Logo from './Logo';
+
 function Header() {
   return (
-    <div>
-      I'm the header
-    </div>
+    <header className="header">
+      <nav className="header__nav">
+        <Logo />
+        <article className="site-nav">
+          <article className="site-nav__link">
+            <a href="">Projects</a>
+          </article>
+          <article className="site-nav__link">
+            <a href="">Blog</a>
+          </article>
+          <article className="site-nav__link">
+            <a href="">About</a>
+          </article>
+        </article>
+      </nav>
+    </header>
   )
 }
 
