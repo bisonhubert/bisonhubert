@@ -9,13 +9,13 @@ function Header() {
         <Logo />
         <article className="site-nav">
           <article className="site-nav__link">
-            <a href="">Projects</a>
+            <a href="/">Projects</a>
           </article>
           <article className="site-nav__link">
-            <a href="">Blog</a>
+            <a href="/">Blog</a>
           </article>
           <article className="site-nav__link">
-            <a href="">About</a>
+            <a href="/">About</a>
           </article>
         </article>
       </nav>
