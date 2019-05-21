@@ -16,7 +16,8 @@ function Header() {
           <article className="site-nav__link">
             <a href="">Blog</a>
           </article>
-
+          */ }
+          { /*
             add about when page is ready
           <article className="site-nav__link">
             <a href="">About</a>
