@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-import UnderConstruction from './components/UnderConstruction.jsx'
+
+import Footer from './components/Footer'
+import Header from './components/Header'
+
+import Landing from './components/landing/Landing'
+
 import './App.css';
 import './utilities.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App h--100vh w--100vw">
-        <UnderConstruction />
+      <div className="App">
+        <Header />
+        <Landing />
+        <Footer />
       </div>
     );
   }

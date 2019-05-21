@@ -1,4 +1,8 @@
 /* Atomic CSS */
+.center {
+    text-align: center;
+}
+
 .d--flex {
     display: flex;
 }
