@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import logo from '../assets/logo.ico'
 
@@ -12,4 +12,4 @@ function Logo() {
   )
 }
 
-export default Logo;
+export default Logo
