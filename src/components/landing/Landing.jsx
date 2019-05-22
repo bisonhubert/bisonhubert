@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import About from './About'
 import InProgress from './InProgress'
@@ -16,4 +16,4 @@ function Landing() {
   )
 }
 
-export default Landing;
+export default Landing
