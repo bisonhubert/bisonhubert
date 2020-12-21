@@ -2,7 +2,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 module.exports = {
   siteName: 'Bison Hubert',
-  siteUrl: 'https://bisonhubert.com',
+  siteUrl: 'https://bisonhubert.github.io',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
