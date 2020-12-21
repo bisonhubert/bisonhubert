@@ -3,6 +3,7 @@
 module.exports = {
   siteName: 'Bison Hubert',
   siteUrl: 'https://bisonhubert.github.io',
+  pathPrefix: '/',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
