@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image
       alt="Portrait of Bison Hubert taken in 2018"
       src="~/favicon.png"
