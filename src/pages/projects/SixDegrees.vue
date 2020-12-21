@@ -5,3 +5,11 @@
     MVP + 1. Validate actors names before submitting
   </div>
 </template>
+
+<script>
+export default {
+  metaInfo: {
+    title: 'Twitter Bot: Six Degrees of Kevin Bacon',
+  },
+};
+</script>
