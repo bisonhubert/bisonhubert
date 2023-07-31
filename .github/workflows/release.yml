@@ -1,6 +1,7 @@
 name: Release
 run-name: Release
 on: 
+  workflow_dispatch:
   pull_request:
     types: [closed]
 jobs:
