@@ -6,7 +6,7 @@ on:
     types: [closed]
 jobs:
   test:
-    if: github.event.pull_request.merged == true
+    # if: github.event.pull_request.merged == true
     uses: ./.github/workflows/test.yml
 
   release:
@@ -15,3 +15,6 @@ jobs:
     steps:
       - run: |
           echo The PR was merged
+          echo Merged? ${{ github.event.pull_request.merged }}
+          echo Workflow dispatch? ${{ github.event.workflow_dispatch }}
+          echo Event? ${{ github.event }}
