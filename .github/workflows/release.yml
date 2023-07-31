@@ -1,0 +1,16 @@
+name: Release
+run-name: Release
+on: 
+  pull_request:
+    types: [closed]
+jobs:
+  test:
+    if: github.event.pull_request.merged == true
+    uses: ./.github/workflows/test.yml
+
+  release:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo The PR was merged
