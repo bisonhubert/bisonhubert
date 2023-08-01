@@ -4,6 +4,27 @@ on:
   workflow_dispatch:
   workflow_call:
 jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: |
+          if [ ${{ secrets.RENDER_TOKEN }} ]; then
+            echo Render token present 
+          else
+            echo Missing render token
+          fi
+          if [ ${{ secrets.GITHUB_TOKEN }} ]; then
+            echo Github token present 
+          else
+            echo Missing github token
+          fi
+          if [ ${{ secrets.RENDER_SERVICE_ID }} ]; then
+            echo Render service id present 
+          else
+            echo Missing render service id
+          fi
+
   deploy:
     runs-on: ubuntu-latest
     steps:
