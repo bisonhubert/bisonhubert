@@ -9,9 +9,12 @@ jobs:
     env:
       RENDER_TOKEN: ${{ secrets.RENDER_TOKEN }}
       RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+      TEST: ${{ secrets.TEST }}
     steps:
       - name: Debug
         run: |
+          echo '$TEST:' $TEST
+          echo '${{ secrets.TEST }}:' ${{ secrets.TEST }}
           if [ $RENDER_TOKEN ]; then
             echo Render token present 
           else
