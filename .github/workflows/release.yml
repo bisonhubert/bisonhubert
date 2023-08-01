@@ -8,6 +8,9 @@ jobs:
   test:
     uses: ./.github/workflows/test.yml
 
-  # wait for deployment
+  check_deployment:
+    secrets: inherit
+    uses: ./.github/workflows/check_deployment.yml
+
   # test on production
   # rollback on failure

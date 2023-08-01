@@ -1,0 +1,20 @@
+name: Check Deployment
+run-name: Check Deployment
+on: 
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  check:
+    name: Check Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Render Deployment
+        uses: bounceapp/render-action@0.6.0
+        with:
+          render-token: ${{ secrets.RENDER_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          service-id: ${{ secrets.BH_SERVICE_ID }}
+          retries: 20
+          wait: 16000
+          sleep: 30000
