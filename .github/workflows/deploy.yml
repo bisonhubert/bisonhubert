@@ -3,16 +3,16 @@ run-name: Deploy
 on: 
   workflow_dispatch:
   workflow_call:
-    secrets:
-      render-token:
-        type: string
-        required: true
-      render-service-id:
-        type: string
-        required: true
-      test:
-        type: string
-        required: true
+    # secrets:
+    #   render-token:
+    #     type: string
+    #     required: true
+    #   render-service-id:
+    #     type: string
+    #     required: true
+    #   test:
+    #     type: string
+    #     required: true
 
 jobs:
   debug:
