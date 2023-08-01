@@ -8,7 +8,13 @@ jobs:
   check:
     name: Check Deployment
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Wait for Render Deployment
         uses: bounceapp/render-action@0.6.0
         with:
