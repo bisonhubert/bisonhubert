@@ -13,8 +13,9 @@ jobs:
     steps:
       - name: Debug
         run: |
-          echo '$TEST:' $TEST
-          echo '${{ secrets.TEST }}:' ${{ secrets.TEST }}
+          echo "TEST: $TEST"
+          echo "secrets.TEST:" ${{ secrets.TEST }}
+          echo "env.TEST:" ${{ env.TEST }}
           if [ $RENDER_TOKEN ]; then
             echo Render token present 
           else
@@ -40,9 +41,9 @@ jobs:
       - name: Deploy to Render
         uses: bounceapp/render-action@0.6.0
         with:
-          render-token: $RENDER_TOKEN
+          render-token: ${{ secrets.RENDER_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          service-id: $RENDER_SERVICE_ID
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
           retries: 20
           wait: 16000
           sleep: 30000
