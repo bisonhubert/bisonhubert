@@ -8,10 +8,6 @@ jobs:
   test:
     uses: ./.github/workflows/test.yml
 
-  check:
-    needs: [test]
-    uses: ./.github/workflows/check_deployment.yml
-    secrets: inherit
-
+  # deploy
   # smoke_test
   # if fail() rollback
