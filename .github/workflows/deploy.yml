@@ -20,22 +20,26 @@ jobs:
     steps:
       - name: Debug
         run: |
-          echo "secrets.test:" ${{ secrets.test }}
-          if [ ${{ secrets.render-token }} ]; then
-            echo Render token present 
-          else
-            echo Missing render token
-          fi
-          if [ ${{ secrets.GITHUB_TOKEN }} ]; then
-            echo Github token present 
-          else
-            echo Missing github token
-          fi
-          if [ ${{ secrets.render-service-id }} ]; then
-            echo Render service id present 
-          else
-            echo Missing render service id
-          fi
+          echo "test:" ${{ secrets.test }}
+          echo "TEST:" ${{ secrets.TEST }}
+          echo "GITHUB_TOKEN:" ${{ secrets.GITHUB_TOKEN }}
+          echo "render_service_id:" ${{ secrets.render_service_id }}
+          echo "RENDER_SERVICE_ID:" ${{ secrets.RENDER_SERVICE_ID }}
+          # if [ ${{ secrets.render_token }} ]; then
+          #   echo Render token present 
+          # else
+          #   echo Missing render token
+          # fi
+          # if [ ${{ secrets.GITHUB_TOKEN }} ]; then
+          #   echo Github token present 
+          # else
+          #   echo Missing github token
+          # fi
+          # if [ ${{ secrets.render_service_id }} ]; then
+          #   echo Render service id present 
+          # else
+          #   echo Missing render service id
+          # fi
 
   deploy:
     runs-on: ubuntu-latest
