@@ -11,6 +11,10 @@ jobs:
   release:
     # needs: [test]
     uses: ./.github/workflows/deploy.yml
+    with:
+      render-token: ${{ secrets.RENDER_TOKEN }}
+      render-service-id: ${{ secrets.RENDER_SERVICE_ID }}
+      test: ${{ secrets.TEST }}
 
   # smoke_test:
 
