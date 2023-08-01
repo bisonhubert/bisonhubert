@@ -10,10 +10,4 @@ jobs:
 
   release:
     needs: [test]
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          echo The PR was merged
-          echo Merged? ${{ github.event.pull_request.merged }}
-          echo Workflow dispatch? ${{ github.event.workflow_dispatch }}
-          echo Event? ${{ github.event }}
+    uses: ./.github/workflows/deploy.yml

@@ -1,9 +1,8 @@
 name: Test
 run-name: Test
 on: 
+  workflow_dispatch:
   workflow_call:
-  pull_request:
-    types: [opened, synchronize]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
