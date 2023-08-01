@@ -3,12 +3,12 @@ run-name: Deploy
 on: 
   workflow_dispatch:
   workflow_call:
-env:
-  RENDER_TOKEN: ${{ secrets.RENDER_TOKEN }}
-  RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
 jobs:
   debug:
     runs-on: ubuntu-latest
+    env:
+      RENDER_TOKEN: ${{ secrets.RENDER_TOKEN }}
+      RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
     steps:
       - name: Debug
         run: |
@@ -30,6 +30,9 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    env:
+      RENDER_TOKEN: ${{ secrets.RENDER_TOKEN }}
+      RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
     steps:
       - name: Deploy to Render
         uses: bounceapp/render-action@0.6.0
