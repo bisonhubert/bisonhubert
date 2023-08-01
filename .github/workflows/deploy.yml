@@ -3,13 +3,16 @@ run-name: Deploy
 on: 
   workflow_dispatch:
   workflow_call:
+env:
+  RENDER_TOKEN: ${{ secrets.RENDER_TOKEN }}
+  RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
 jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
         run: |
-          if [ ${{ secrets.RENDER_TOKEN }} ]; then
+          if [ $RENDER_TOKEN ]; then
             echo Render token present 
           else
             echo Missing render token
@@ -19,7 +22,7 @@ jobs:
           else
             echo Missing github token
           fi
-          if [ ${{ secrets.RENDER_SERVICE_ID }} ]; then
+          if [ $RENDER_SERVICE_ID ]; then
             echo Render service id present 
           else
             echo Missing render service id
@@ -31,9 +34,9 @@ jobs:
       - name: Deploy to Render
         uses: bounceapp/render-action@0.6.0
         with:
-          render-token: ${{ secrets.RENDER_TOKEN }}
+          render-token: $RENDER_TOKEN
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+          service-id: $RENDER_SERVICE_ID
           retries: 20
           wait: 16000
           sleep: 30000
