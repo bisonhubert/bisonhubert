@@ -9,7 +9,7 @@ jobs:
   #   uses: ./.github/workflows/test.yml
 
   release:
-    needs: [test]
+    # needs: [test]
     uses: ./.github/workflows/deploy.yml
 
   # smoke_test:
