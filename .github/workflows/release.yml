@@ -9,6 +9,7 @@ jobs:
     uses: ./.github/workflows/test.yml
 
   check_deployment:
+    needs: [test]
     permissions:
       id-token: write
       contents: read
