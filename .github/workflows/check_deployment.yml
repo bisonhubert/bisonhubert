@@ -1,26 +1,54 @@
-name: Check Deployment
-run-name: Check Deployment
+name: Deploy
+run-name: Deploy
 on: 
   workflow_dispatch:
   workflow_call:
+    # secrets:
+    #   render-token:
+    #     type: string
+    #     required: true
+    #   render-service-id:
+    #     type: string
+    #     required: true
+    #   test:
+    #     type: string
+    #     required: true
 
 jobs:
-  check:
-    name: Check Deployment
+  debug:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Debug
+        run: |
+          echo "secrets.test:" ${{ secrets.test }}
+          if [ ${{ secrets.render-token }} ]; then
+            echo Render token present 
+          else
+            echo Missing render token
+          fi
+          if [ ${{ secrets.GITHUB_TOKEN }} ]; then
+            echo Github token present 
+          else
+            echo Missing github token
+          fi
+          if [ ${{ secrets.render-service-id }} ]; then
+            echo Render service id present 
+          else
+            echo Missing render service id
+          fi
 
-      - name: Wait for Render Deployment
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      RENDER_TOKEN: ${{ secrets.render-token }}
+      RENDER_SERVICE_ID: ${{ secrets.render-service-id }}
+    steps:
+      - name: Deploy to Render
         uses: bounceapp/render-action@0.6.0
         with:
           render-token: ${{ secrets.RENDER_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          service-id: ${{ secrets.BH_SERVICE_ID }}
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
           retries: 20
           wait: 16000
           sleep: 30000

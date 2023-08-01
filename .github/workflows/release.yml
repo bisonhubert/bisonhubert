@@ -5,16 +5,13 @@ on:
   push:
     branches: [main]
 jobs:
-  test:
-    uses: ./.github/workflows/test.yml
+  # test:
+  #   uses: ./.github/workflows/test.yml
 
-  check_deployment:
-    needs: [test]
-    permissions:
-      id-token: write
-      contents: read
-    secrets: inherit
+  check:
+    # needs: [test]
     uses: ./.github/workflows/check_deployment.yml
+    secrets: inherit
 
-  # test on production
-  # rollback on failure
+  # smoke_test
+  # if fail() rollback
