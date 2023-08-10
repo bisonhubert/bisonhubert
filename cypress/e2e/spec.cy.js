@@ -1,14 +1,14 @@
 const getBaseUrl = () => {
   return process.env.NODE_ENV === 'production'
     ? 'https://bisonhubert.com'
-    : 'http://localhost:3000'
+    : 'http://localhost:5173'
 }
 
 const baseUrl = getBaseUrl()
 
 describe('Portfolio Site', () => {
-  it('Loads /', () => {
+  it('Loads root', () => {
     cy.visit(baseUrl)
-    cy.contains('Bison rules.')
+    cy.contains('Bison Hubert')
   })
 })
