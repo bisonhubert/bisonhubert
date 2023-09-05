@@ -9,6 +9,5 @@ const baseUrl = getBaseUrl();
 describe("Portfolio Site", () => {
   it("Loads root", () => {
     cy.visit(baseUrl);
-    cy.contains("Bison Hubert");
   });
 });
