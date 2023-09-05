@@ -1,6 +1,6 @@
 name: Test
 run-name: Test
-on: 
+on:
   workflow_dispatch:
   workflow_call:
 jobs:
@@ -12,6 +12,6 @@ jobs:
 
       - name: Run Cypress
         uses: cypress-io/github-action@v5
-        with: 
+        with:
           build: yarn run build
           start: yarn start

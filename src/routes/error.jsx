@@ -6,9 +6,7 @@ function Root() {
 
   return (
     <div>
-      <main>
-        Error page.
-      </main>
+      <main>Error page.</main>
     </div>
   );
 }

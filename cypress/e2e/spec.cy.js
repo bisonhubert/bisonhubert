@@ -1,14 +1,14 @@
 const getBaseUrl = () => {
-  return process.env.NODE_ENV === 'production'
-    ? 'https://bisonhubert.com'
-    : 'http://localhost:5173'
-}
+  return process.env.NODE_ENV === "production"
+    ? "https://bisonhubert.com"
+    : "http://localhost:5173";
+};
 
-const baseUrl = getBaseUrl()
+const baseUrl = getBaseUrl();
 
-describe('Portfolio Site', () => {
-  it('Loads root', () => {
-    cy.visit(baseUrl)
-    cy.contains('Bison Hubert')
-  })
-})
+describe("Portfolio Site", () => {
+  it("Loads root", () => {
+    cy.visit(baseUrl);
+    cy.contains("Bison Hubert");
+  });
+});
